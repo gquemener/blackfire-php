@@ -89,7 +89,7 @@ option **combined** with `--server-id` and/or `--server-token`.
 
 ## Workaround
 
-So far, I've managed to configure this value by running the following commands in `entrypoint.sh`:
+So far, I've managed to configure the credentials by running the following commands in `entrypoint.sh`:
 
 ```
 $ sed -i "s/^server-id=.*/server-id=${BLACKFIRE_AGENT_SERVER_ID}/" /etc/blackfire/agent
